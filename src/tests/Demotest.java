@@ -5,10 +5,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 public class Demotest {
-@Test
-public void demotest() {
-System.setProperty("webdriver.chrome.driver",
-		"driver-lib\\chromedriver.exe");
-WebDriver driver = new ChromeDriver();
-}
+	@Test
+	public void demotest() {
+		System.setProperty("webdriver.chrome.driver", "driver-lib\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		
+		driver.navigate().to("http://cms.demo.katalon.com/");
+	}
 }
